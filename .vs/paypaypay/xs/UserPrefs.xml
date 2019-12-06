@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{F793B649-B6DA-B246-7B9A-BD613BE39E88}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Library/PackageCache/com.unity.2d.ik@1.2.0-preview.2/Editor/Inspectors/IKManager2DEditor.cs">
+    <Files>
+      <File FileName="Assets/accelReader.cs" Line="37" Column="6" />
+      <File FileName="Assets/random_move.cs" Line="23" Column="47" />
+      <File FileName="Library/PackageCache/com.unity.2d.ik@1.2.0-preview.2/Runtime/FabrikSolver2D.cs" Line="82" Column="1" />
+      <File FileName="Library/PackageCache/com.unity.2d.ik@1.2.0-preview.2/Editor/Inspectors/IKManager2DEditor.cs" Line="156" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
