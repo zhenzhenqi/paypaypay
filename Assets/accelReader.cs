@@ -33,6 +33,6 @@ public class accelReader : MonoBehaviour
         currentA.y = Input.acceleration.y;
         currentA.z = Input.acceleration.z;
     
-        Debug.Log(accelChange);
+        //Debug.Log(accelChange);
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class random_move : MonoBehaviour
 {
+
     public accelReader accelerationReader;
     // Start is called before the first frame update
     Vector2 startingPos;
@@ -19,12 +20,18 @@ public class random_move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown("space")){
-        if (accelerationReader.accelChange>0.1f){
+        //mobile accelerometer
+        //if (accelerationReader.accelChange > 0.1f) {
+        //    Vector2 tempDisp = (Vector2)Random.insideUnitCircle;
+        //    endingPos = startingPos + tempDisp;
+        //    transform.position = endingPos;
+        //}
+
+        //desktop debug
+        if (Input.GetKeyDown("space")){
             Vector2 tempDisp = (Vector2)Random.insideUnitCircle;
-//			Debug.Log(tempDisp);
-			endingPos = startingPos + tempDisp;
-			transform.position = endingPos;
-		}
+            endingPos = startingPos + tempDisp;
+            transform.position = endingPos;
+        }
     }
 }

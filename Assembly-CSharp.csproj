@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\accelReader.cs" />
+    <Compile Include="Assets\coinManager.cs" />
     <Compile Include="Assets\random_move.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/yang/Documents/paypaypay/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
