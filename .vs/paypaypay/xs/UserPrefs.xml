@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{F793B649-B6DA-B246-7B9A-BD613BE39E88}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/sizeManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/coinManager.cs">
     <Files>
-      <File FileName="Assets/accelReader.cs" Line="37" Column="6" />
-      <File FileName="Assets/random_move.cs" Line="9" Column="5" />
+      <File FileName="Assets/accelReader.cs" Line="36" Column="7" />
+      <File FileName="Assets/random_move.cs" Line="27" Column="15" />
       <File FileName="Library/PackageCache/com.unity.2d.ik@1.2.0-preview.2/Runtime/FabrikSolver2D.cs" Line="82" Column="1" />
       <File FileName="Library/PackageCache/com.unity.2d.ik@1.2.0-preview.2/Editor/Inspectors/IKManager2DEditor.cs" Line="156" Column="1" />
-      <File FileName="Assets/sizeManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/coinManager.cs" Line="5" Column="18" />
+      <File FileName="Assets/coinManager.cs" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
