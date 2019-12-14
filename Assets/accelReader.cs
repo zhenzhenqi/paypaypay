@@ -5,7 +5,7 @@ using UnityEngine;
 public class accelReader : MonoBehaviour
 {
     // Start is called before the first frame update
-	public float accelChange;
+    public float accelChange;
     Vector3 currentA;
     Vector3 incomingA;
 
@@ -17,13 +17,13 @@ public class accelReader : MonoBehaviour
         currentA.x = Input.acceleration.x;
         currentA.y = Input.acceleration.y;
         currentA.z = Input.acceleration.z;
-       
+
     }
 
     // Update is called once per frame
     void Update()
     {
-		incomingA.x = Input.acceleration.x;
+        incomingA.x = Input.acceleration.x;
         incomingA.y = Input.acceleration.y;
         incomingA.z = Input.acceleration.z;
 
@@ -32,7 +32,7 @@ public class accelReader : MonoBehaviour
         currentA.x = Input.acceleration.x;
         currentA.y = Input.acceleration.y;
         currentA.z = Input.acceleration.z;
-    
+
         //Debug.Log(accelChange);
     }
 }
