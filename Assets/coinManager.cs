@@ -43,7 +43,7 @@ public class coinManager : MonoBehaviour
         {
             if (coin == null)
             {
-                coin = GameObject.Instantiate(coinPrefab, Vector3.zero, Quaternion.identity);
+                coin = Instantiate(coinPrefab, Vector3.zero, Quaternion.identity);
 
                 coin.transform.parent = gameObject.transform;
                 coin.transform.localPosition = Vector2.zero;
@@ -66,7 +66,7 @@ public class coinManager : MonoBehaviour
             }
         }
 
-        Debug.Log("accumDisp is " + accumDisp);
+        //Debug.Log("accumDisp is " + accumDisp);
 
 
 

@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class accelReader : MonoBehaviour
 {
+
+    public static accelReader main;
     // Start is called before the first frame update
     public float accelChange;
     Vector3 currentA;
     Vector3 incomingA;
+
+
+    private void Awake()
+    {
+        main = this;
+    }
 
     void Start()
     {
