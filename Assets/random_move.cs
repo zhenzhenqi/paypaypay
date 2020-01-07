@@ -6,8 +6,9 @@ using UnityEngine;
 
 public class random_move : MonoBehaviour
 {
+    [SerializeField]
+    private float multiplier;
 
- 
     // Start is called before the first frame update
     Vector2 startingPos;
     Vector2 endingPos;
@@ -15,6 +16,7 @@ public class random_move : MonoBehaviour
     void Start()
     {
         startingPos = transform.position;
+        multiplier = 2.0f;
     }
 
     // Update is called once per frame
@@ -32,7 +34,7 @@ public class random_move : MonoBehaviour
 
     void MoveAss()
     {
-        Vector2 tempDisp = (Vector2)Random.insideUnitCircle;
+        Vector2 tempDisp = (Vector2)Random.insideUnitCircle * multiplier;
         endingPos = startingPos + tempDisp;
         transform.position = endingPos;
     }
