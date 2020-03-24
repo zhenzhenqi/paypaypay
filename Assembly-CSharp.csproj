@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\accelReader.cs" />
     <Compile Include="Assets\coinManager.cs" />
+    <Compile Include="Assets\headMovement.cs" />
     <Compile Include="Assets\random_move.cs" />
     <Compile Include="Assets\SelfDestroy.cs" />
     <Reference Include="Unity.Timeline.Editor">
