@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1216226831151901815}
   - component: {fileID: 1216226831151901705}
   - component: {fileID: 1216226831151901704}
-  - component: {fileID: 9157134779058646605}
   m_Layer: 10
   m_Name: coin
   m_TagString: Untagged
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1216226831151901812}
   m_LocalRotation: {x: 0, y: 0, z: -0.13130483, w: 0.99134207}
   m_LocalPosition: {x: 0.28, y: 0.42, z: -1}
-  m_LocalScale: {x: 2.0000002, y: 2.0000002, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -130,7 +129,7 @@ HingeJoint2D:
   m_GameObject: {fileID: 1216226831151901812}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -145,19 +144,3 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: -5
     m_UpperAngle: 5
---- !u!114 &9157134779058646605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216226831151901812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ddd138c60cf743ab85b85b56476ec14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 1216226831151901812}
-  coinCounter: 0
-  maxCoinSize: 3
-  counterText: {fileID: 0}

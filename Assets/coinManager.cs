@@ -8,11 +8,10 @@ public class coinManager : MonoBehaviour
     Vector2 incomingP;
     float disp;
     float accumDisp;
+    int maxCoinSize = 2;
+
     public GameObject coinPrefab;
-
     public int coinCounter = 0;
-
-    public int maxCoinSize = 100;
 
     GameObject coin;
     public UnityEngine.UI.Text counterText;
@@ -22,7 +21,7 @@ public class coinManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.localScale = new Vector3(0.01f, 0.01f, 0);
+        //transform.localScale = new Vector3(0.01f, 0.01f, 0);
         currentP.x = transform.position.x;
         currentP.y = transform.position.y;
 
@@ -43,26 +42,33 @@ public class coinManager : MonoBehaviour
         {
             if (coin == null)
             {
-                coin = Instantiate(coinPrefab, Vector3.zero, Quaternion.identity);
-
+                coin = Instantiate(coinPrefab);
+                Vector3 tempPos = coin.transform.localPosition;
+                coin.GetComponent<HingeJoint2D>().connectedBody = gameObject.transform.GetComponent<Rigidbody2D>();
                 coin.transform.parent = gameObject.transform;
-                coin.transform.localPosition = Vector2.zero;
+                coin.transform.localPosition = tempPos;
+                coin.transform.localScale = new Vector3(0, 0, 0);
             }
             else
             {
-                if (accumDisp < maxCoinSize)
+                if (coin.transform.localScale.x < maxCoinSize)
                 {
-                    coin.transform.localScale = accumDisp * new Vector3(1, 1, 0);
+                    coin.transform.localScale += 0.01f * new Vector3(1, 1, 1);
+                    //Debug.Log("inside if" + coin.transform.localScale);
                 }
                 else
                 {
+                    coin.transform.localScale = maxCoinSize * new Vector3(1, 1, 0);
                     coin.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
                     accumDisp = 0;
                     coin.transform.parent = null;
+                    Destroy(coin.GetComponent<HingeJoint2D>());
                     coin.AddComponent<SelfDestroy>();
                     coin = null;
                     IncrementCoinCounter();
+                    //Debug.Log("inside else" + coin.transform.localScale);
                 }
+                
             }
         }
 
