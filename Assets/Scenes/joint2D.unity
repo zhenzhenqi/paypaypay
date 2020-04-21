@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &242890498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 546222056}
   m_Layer: 0
   m_Name: body (4)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,8 +630,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775984466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: -3.06, z: -7.1347246}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 4.19, y: -3.06, z: -7.1347246}
+  m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -661,12 +661,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 775984466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ddd138c60cf743ab85b85b56476ec14, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e3ea19c975934f5c83003621eb24217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPrefab: {fileID: 0}
-  coinCounter: 0
-  counterText: {fileID: 0}
 --- !u!1 &813801625
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +712,7 @@ GameObject:
   - component: {fileID: 907172379}
   m_Layer: 11
   m_Name: head
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -751,7 +748,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.1
-  m_GravityScale: -5
+  m_GravityScale: -2.8
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1127,7 +1124,7 @@ GameObject:
   - component: {fileID: 1464056223}
   m_Layer: 0
   m_Name: body (3)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1272,7 +1269,7 @@ GameObject:
   - component: {fileID: 1501428158}
   m_Layer: 12
   m_Name: body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1483,7 +1480,7 @@ GameObject:
   - component: {fileID: 1855925480}
   m_Layer: 0
   m_Name: body (5)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1629,7 +1626,7 @@ GameObject:
   - component: {fileID: 1901743623}
   m_Layer: 12
   m_Name: tail
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1772,8 +1769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 1216226831151901812, guid: f039192c86a4e42aab9ffd66bf17ba23,
     type: 3}
-  coinCounter: 0
-  counterText: {fileID: 1379629565}
+  force: {fileID: 775984466}
 --- !u!1 &1999147926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +1892,7 @@ GameObject:
   - component: {fileID: 2047822714}
   m_Layer: 0
   m_Name: body (2)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2041,7 +2037,7 @@ GameObject:
   - component: {fileID: 2058652590}
   m_Layer: 0
   m_Name: body (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

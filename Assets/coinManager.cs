@@ -11,11 +11,12 @@ public class coinManager : MonoBehaviour
     int maxCoinSize = 2;
 
     public GameObject coinPrefab;
-    public int coinCounter = 0;
+    public GameObject force;
+    //public int coinCounter = 0;
 
     GameObject coin;
-    public UnityEngine.UI.Text counterText;
-    string prefix = "Coin: ";
+    //public UnityEngine.UI.Text counterText;
+    //string prefix = "Coin: ";
 
     // public accelReader accelerationReader;
     // Start is called before the first frame update
@@ -28,7 +29,7 @@ public class coinManager : MonoBehaviour
         disp = 0;
         accumDisp = 0;
         coin = null;
-        counterText.text = prefix + coinCounter;
+        //counterText.text = prefix + coinCounter;
     }
 
     // Update is called once per frame
@@ -36,6 +37,8 @@ public class coinManager : MonoBehaviour
     {
         disp = Mathf.Abs(transform.position.sqrMagnitude - currentP.sqrMagnitude);
         accumDisp += disp;
+
+        
 
 
         if (disp > 0)
@@ -65,7 +68,7 @@ public class coinManager : MonoBehaviour
                     Destroy(coin.GetComponent<HingeJoint2D>());
                     coin.AddComponent<SelfDestroy>();
                     coin = null;
-                    IncrementCoinCounter();
+                    //IncrementCoinCounter();
                     //Debug.Log("inside else" + coin.transform.localScale);
                 }
                 
@@ -81,9 +84,11 @@ public class coinManager : MonoBehaviour
         currentP = transform.position;
     }
 
-    void IncrementCoinCounter()
-    {
-        coinCounter++;
-        counterText.text = prefix + coinCounter;
-    }
+    
+
+    //void IncrementCoinCounter()
+    //{
+    //    coinCounter++;
+    //    counterText.text = prefix + coinCounter;
+    //}
 }
