@@ -4,25 +4,42 @@ using UnityEngine;
 
 public class forceManager : MonoBehaviour
 {
+    public bool isColliding;
+    public GameObject accelReader;
+    private Vector3 accelVal;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        isColliding = false;
+        accelVal = accelReader.GetComponent<accelReader>().accelChange;
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = transform.position + accelVal;
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("colliding with coin" + other.gameObject.name);
-        if (other.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("colliding with coin"+other.gameObject.name);
+            isColliding = true;
+            //Debug.Log("isCollding: " + isColliding);
+        }
+
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            isColliding = false;
+            //Debug.Log("isCollding: " + isColliding);
         }
 
     }
 }
+

@@ -12,6 +12,7 @@ public class coinManager : MonoBehaviour
 
     public GameObject coinPrefab;
     public GameObject force;
+    bool producingCoin;
     //public int coinCounter = 0;
 
     GameObject coin;
@@ -26,22 +27,24 @@ public class coinManager : MonoBehaviour
         currentP.x = transform.position.x;
         currentP.y = transform.position.y;
 
-        disp = 0;
-        accumDisp = 0;
-        coin = null;
+        producingCoin = true;
+
+        //disp = 0;
+        //accumDisp = 0;
+        //coin = null;
         //counterText.text = prefix + coinCounter;
     }
 
     // Update is called once per frame
     void Update()
     {
-        disp = Mathf.Abs(transform.position.sqrMagnitude - currentP.sqrMagnitude);
-        accumDisp += disp;
-
-        
+        //disp = Mathf.Abs(transform.position.sqrMagnitude - currentP.sqrMagnitude);
+        //accumDisp += disp;
 
 
-        if (disp > 0)
+
+        if (producingCoin == false) return;
+        if (force.GetComponent<forceManager>().isColliding)
         {
             if (coin == null)
             {
@@ -56,7 +59,7 @@ public class coinManager : MonoBehaviour
             {
                 if (coin.transform.localScale.x < maxCoinSize)
                 {
-                    coin.transform.localScale += 0.01f * new Vector3(1, 1, 1);
+                    coin.transform.localScale += 0.02f * new Vector3(1, 1, 1);
                     //Debug.Log("inside if" + coin.transform.localScale);
                 }
                 else
@@ -68,10 +71,11 @@ public class coinManager : MonoBehaviour
                     Destroy(coin.GetComponent<HingeJoint2D>());
                     coin.AddComponent<SelfDestroy>();
                     coin = null;
+                    producingCoin = false;
+                    Invoke("ReStartProducing", 3f);
                     //IncrementCoinCounter();
                     //Debug.Log("inside else" + coin.transform.localScale);
                 }
-                
             }
         }
 
@@ -84,7 +88,11 @@ public class coinManager : MonoBehaviour
         currentP = transform.position;
     }
 
-    
+
+    void ReStartProducing()
+    {
+        producingCoin = true;
+    }
 
     //void IncrementCoinCounter()
     //{

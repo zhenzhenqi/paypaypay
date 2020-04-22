@@ -23,7 +23,7 @@ public class random_move : MonoBehaviour
     void Update()
     {
         //mobile accelerometer
-        if ( (accelReader.main.accelChange > 0.1f) || Input.GetKeyDown(KeyCode.Space))
+        //if ( (accelReader.main.accelChange > 0.1f) || Input.GetKeyDown(KeyCode.Space))
         {
             MoveAss();
         }
