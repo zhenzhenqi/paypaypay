@@ -67,9 +67,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 12678}
+      Script: {instanceID: 12142}
     - Class: 114
-      Script: {instanceID: 27440}
+      Script: {instanceID: 12680}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -481,6 +481,12 @@ ScriptsOnlyBuild:
     className: coinManager
   - hash:
       serializedVersion: 2
+      Hash: c2125e709eb1c6d15c9b2cf1f62a0a8e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: forceManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -611,13 +617,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 8548ccbe0c0d4b98c4dbe36171a62a7b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: forceManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/joint2D.unity
-  playerPath: /Users/yang/Downloads/paypaypay.apk
+  playerPath: /Users/yang/Documents/paypaypay/androidBuild.apk

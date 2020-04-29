@@ -34,17 +34,19 @@ public class accelReader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log("Input.acceleration: " + Input.acceleration);
         incomingA.x = Input.acceleration.x;
         incomingA.y = Input.acceleration.y;
         incomingA.z = Input.acceleration.z;
+        //Debug.Log("incomingA: " + incomingA);
 
         //accelChange = Mathf.Abs(incomingA.sqrMagnitude - currentA.sqrMagnitude);
         accelChange = incomingA - currentA;
+        Debug.Log("accelChange from accel reader: "+accelChange);
 
         currentA.x = Input.acceleration.x;
         currentA.y = Input.acceleration.y;
         currentA.z = Input.acceleration.z;
-
-        //Debug.Log(accelChange);
+        
     }
 }
