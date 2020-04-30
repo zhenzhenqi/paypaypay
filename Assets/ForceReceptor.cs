@@ -14,15 +14,20 @@ public class ForceReceptor : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        rb.drag = 5;
+        rb.angularDrag = 5;
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (accelReader.main.accelChange.magnitude > 0)
+        if (accelReader.main.accelChange.magnitude > 0.3f)
         {
-            targetForce = Random.insideUnitCircle * accelReader.main.accelChange * 200;
-            rb.AddForce(targetForce);
+            targetForce = Random.insideUnitCircle * accelReader.main.accelChange.magnitude / 3;
+            //rb.AddForce(targetForce);
+            rb.MovePosition(transform.position + targetForce);
         }
     }
 
