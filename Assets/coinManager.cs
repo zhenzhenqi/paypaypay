@@ -41,10 +41,12 @@ public class coinManager : MonoBehaviour
         //disp = Mathf.Abs(transform.position.sqrMagnitude - currentP.sqrMagnitude);
         //accumDisp += disp;
 
-
+        //Debug.Log("accel mag:  " + accelReader.main.accelChange.magnitude);
+        float freshAccelMagitude = accelReader.main.accelChange.magnitude;
 
         if (producingCoin == false) return;
-        if (force.GetComponent<forceManager>().isColliding)
+        //if (force.GetComponent<forceManager>().isColliding)
+        if(freshAccelMagitude  > 0.1)
         {
             if (coin == null)
             {
@@ -59,7 +61,7 @@ public class coinManager : MonoBehaviour
             {
                 if (coin.transform.localScale.x < maxCoinSize)
                 {
-                    coin.transform.localScale += 0.02f * new Vector3(1, 1, 1);
+                    coin.transform.localScale += 0.02f * new Vector3(1, 1, 1) * freshAccelMagitude/5;
                     //Debug.Log("inside if" + coin.transform.localScale);
                 }
                 else

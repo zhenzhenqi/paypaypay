@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{F793B649-B6DA-B246-7B9A-BD613BE39E88}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/accelReader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/forceManager.cs">
     <Files>
-      <File FileName="Assets/coinManager.cs" Line="47" Column="13" />
-      <File FileName="Assets/forceManager.cs" Line="23" Column="6" />
-      <File FileName="Assets/accelReader.cs" Line="45" Column="50" />
+      <File FileName="Assets/coinManager.cs" Line="47" Column="59" />
       <File FileName="Assets/random_move.cs" />
+      <File FileName="Assets/ForceReceptor.cs" Line="24" Column="87" />
+      <File FileName="Assets/ForceReceptorSpawner.cs" Line="18" Column="10" />
+      <File FileName="Assets/accelReader.cs" Line="45" Column="68" />
+      <File FileName="Assets/forceManager.cs" Line="7" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="paypaypay" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="accelReader.cs" selected="True" />
+              <Node name="forceManager.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -20,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="878d0151-f642-41b7-83be-6080191c1f7a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5fb87599-cf30-44db-b5d1-59357e252c24" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

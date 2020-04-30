@@ -42,7 +42,7 @@ public class accelReader : MonoBehaviour
 
         //accelChange = Mathf.Abs(incomingA.sqrMagnitude - currentA.sqrMagnitude);
         accelChange = incomingA - currentA;
-        Debug.Log("accelChange from accel reader: "+accelChange);
+        //Debug.Log("accelChange from accel reader: "+accelChange);
 
         currentA.x = Input.acceleration.x;
         currentA.y = Input.acceleration.y;

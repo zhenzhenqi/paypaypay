@@ -66,6 +66,8 @@
     <Compile Include="Assets\accelReader.cs" />
     <Compile Include="Assets\coinManager.cs" />
     <Compile Include="Assets\forceManager.cs" />
+    <Compile Include="Assets\ForceReceptor.cs" />
+    <Compile Include="Assets\ForceReceptorSpawner.cs" />
     <Compile Include="Assets\headMovement.cs" />
     <Compile Include="Assets\random_move.cs" />
     <Compile Include="Assets\SelfDestroy.cs" />
@@ -143,6 +145,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/yang/Documents/paypaypay/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
+      <HintPath>/Users/yang/Documents/paypaypay/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ForceReceptorSpawner
     - accelReader
     - coinManager
     - forceManager
@@ -19,6 +20,9 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatConsoleWindow
+    - Unity.Android.Logcat.AndroidLogcatManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -48,6 +52,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
     - Class: 70
       Script: {instanceID: 0}
     - Class: 81
@@ -59,17 +65,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9986}
     - Class: 114
-      Script: {instanceID: 10678}
+      Script: {instanceID: 10680}
     - Class: 114
-      Script: {instanceID: 11942}
+      Script: {instanceID: 11944}
     - Class: 114
-      Script: {instanceID: 12082}
+      Script: {instanceID: 12084}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 12132}
     - Class: 114
-      Script: {instanceID: 12142}
+      Script: {instanceID: 12144}
     - Class: 114
-      Script: {instanceID: 12680}
+      Script: {instanceID: 12682}
+    - Class: 114
+      Script: {instanceID: 15916}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -257,6 +265,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ForceReceptor
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -617,6 +631,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ForceReceptorSpawner
   platform: 13
   scenePathNames:
   - Assets/Scenes/joint2D.unity

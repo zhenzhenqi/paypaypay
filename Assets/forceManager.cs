@@ -6,7 +6,7 @@ public class forceManager : MonoBehaviour
 {
     public bool isColliding;
     public GameObject accelReader;
-    [Range(1, 100)] public int thrust;
+    [Range(1, 1000)] public int thrust;
     private Vector3 accelVal;
     private Rigidbody2D rb;
 
@@ -14,7 +14,6 @@ public class forceManager : MonoBehaviour
     void Start()
     {
         isColliding = false;
-        thrust = 20;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -29,7 +28,7 @@ public class forceManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.AddForce(accelVal * thrust);
+        rb.AddForce(Vector3.Scale(new Vector3(-1,-1,1), accelVal) * thrust);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
